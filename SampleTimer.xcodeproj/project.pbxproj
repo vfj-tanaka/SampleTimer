@@ -10,12 +10,15 @@
 		FC3F4D0928920CF0003D0073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F4D0828920CF0003D0073 /* AppDelegate.swift */; };
 		FC3F4D0B28920CF0003D0073 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F4D0A28920CF0003D0073 /* SceneDelegate.swift */; };
 		FC3F4D0D28920CF0003D0073 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F4D0C28920CF0003D0073 /* ViewController.swift */; };
-		FC3F4D1028920CF0003D0073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3F4D0E28920CF0003D0073 /* Main.storyboard */; };
 		FC3F4D1228920CF7003D0073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3F4D1128920CF7003D0073 /* Assets.xcassets */; };
 		FC3F4D1528920CF7003D0073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3F4D1328920CF7003D0073 /* LaunchScreen.storyboard */; };
 		FC3F4D2028920CF7003D0073 /* SampleTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F4D1F28920CF7003D0073 /* SampleTimerTests.swift */; };
 		FC3F4D2A28920CF7003D0073 /* SampleTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F4D2928920CF7003D0073 /* SampleTimerUITests.swift */; };
 		FC3F4D2C28920CF7003D0073 /* SampleTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F4D2B28920CF7003D0073 /* SampleTimerUITestsLaunchTests.swift */; };
+		FC3F4D3A289213A7003D0073 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F4D39289213A7003D0073 /* RxCocoa */; };
+		FC3F4D3C289213A7003D0073 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F4D3B289213A7003D0073 /* RxRelay */; };
+		FC3F4D3E289213A7003D0073 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F4D3D289213A7003D0073 /* RxSwift */; };
+		FC3F4D4328921820003D0073 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F4D4228921820003D0073 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,6 @@
 		FC3F4D0828920CF0003D0073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3F4D0A28920CF0003D0073 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FC3F4D0C28920CF0003D0073 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FC3F4D0F28920CF0003D0073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC3F4D1128920CF7003D0073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC3F4D1428920CF7003D0073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC3F4D1628920CF7003D0073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 		FC3F4D2528920CF7003D0073 /* SampleTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3F4D2928920CF7003D0073 /* SampleTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTimerUITests.swift; sourceTree = "<group>"; };
 		FC3F4D2B28920CF7003D0073 /* SampleTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC3F4D4228921820003D0073 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3F4D3E289213A7003D0073 /* RxSwift in Frameworks */,
+				FC3F4D3C289213A7003D0073 /* RxRelay in Frameworks */,
+				FC3F4D3A289213A7003D0073 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +108,7 @@
 				FC3F4D0828920CF0003D0073 /* AppDelegate.swift */,
 				FC3F4D0A28920CF0003D0073 /* SceneDelegate.swift */,
 				FC3F4D0C28920CF0003D0073 /* ViewController.swift */,
-				FC3F4D0E28920CF0003D0073 /* Main.storyboard */,
+				FC3F4D4228921820003D0073 /* ViewModel.swift */,
 				FC3F4D1128920CF7003D0073 /* Assets.xcassets */,
 				FC3F4D1328920CF7003D0073 /* LaunchScreen.storyboard */,
 				FC3F4D1628920CF7003D0073 /* Info.plist */,
@@ -143,6 +149,11 @@
 			dependencies = (
 			);
 			name = SampleTimer;
+			packageProductDependencies = (
+				FC3F4D39289213A7003D0073 /* RxCocoa */,
+				FC3F4D3B289213A7003D0073 /* RxRelay */,
+				FC3F4D3D289213A7003D0073 /* RxSwift */,
+			);
 			productName = SampleTimer;
 			productReference = FC3F4D0528920CF0003D0073 /* SampleTimer.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = FC3F4CFC28920CF0003D0073;
+			packageReferences = (
+				FC3F4D38289213A7003D0073 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = FC3F4D0628920CF0003D0073 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +247,6 @@
 			files = (
 				FC3F4D1528920CF7003D0073 /* LaunchScreen.storyboard in Resources */,
 				FC3F4D1228920CF7003D0073 /* Assets.xcassets in Resources */,
-				FC3F4D1028920CF0003D0073 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 			files = (
 				FC3F4D0D28920CF0003D0073 /* ViewController.swift in Sources */,
 				FC3F4D0928920CF0003D0073 /* AppDelegate.swift in Sources */,
+				FC3F4D4328921820003D0073 /* ViewModel.swift in Sources */,
 				FC3F4D0B28920CF0003D0073 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +311,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FC3F4D0E28920CF0003D0073 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC3F4D0F28920CF0003D0073 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FC3F4D1328920CF7003D0073 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +447,6 @@
 				INFOPLIST_FILE = SampleTimer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +473,6 @@
 				INFOPLIST_FILE = SampleTimer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -596,6 +600,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC3F4D38289213A7003D0073 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC3F4D39289213A7003D0073 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC3F4D38289213A7003D0073 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		FC3F4D3B289213A7003D0073 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC3F4D38289213A7003D0073 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		FC3F4D3D289213A7003D0073 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC3F4D38289213A7003D0073 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FC3F4CFD28920CF0003D0073 /* Project object */;
 }
