@@ -52,7 +52,7 @@ final class ViewModel: ViewModelType, ViewModelInputs, ViewModelOutputs {
         isTimerWorked.asObservable()
             .flatMapLatest { [weak self] isWorked -> Observable<Int> in
                 if isWorked {
-                    return Observable<Int>.interval(RxTimeInterval.seconds(1), scheduler: MainScheduler.instance)
+                    return Observable<Int>.interval(RxTimeInterval.milliseconds(100), scheduler: MainScheduler.instance)
                         .withLatestFrom(Observable<Int>.just(self?.totalTimeDuration.value ?? 0)) { ($0 + $1) }
                 } else {
                     return Observable<Int>.just(self?.totalTimeDuration.value ?? 0)
